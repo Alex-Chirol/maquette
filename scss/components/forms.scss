@@ -1,0 +1,29 @@
+.form {
+    &__input {
+        background-color: #d9d9d9;
+        color: gray;
+        border: none;
+        padding: 10px;
+    }
+    &__textarea {
+        background-color: #d9d9d9;
+        color: gray;
+        border: none;
+        padding: 3px;
+    }
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    &__input {
+        margin: 10px;
+    }
+    &__textarea {
+        margin: 10px;
+    }
+    &__btn {
+        margin-right: 160px;
+    }
+}

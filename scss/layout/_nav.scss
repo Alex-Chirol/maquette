@@ -1,0 +1,19 @@
+.nav {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30%;
+
+    &__logo {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+    }
+
+    // style in buttons.scss
+    
+    &__link {
+        text-decoration: none;
+    }
+}

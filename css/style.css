@@ -1,6 +1,124 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30%;
+}
+.nav__logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../img/eau.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.form__btn {
+  border: none;
+}
+
+.section__article {
+  padding: 0 20%;
+}
+
+.article {
+  padding-top: 50px;
+  text-align: center;
+}
+.article__img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.article__title {
+  margin-bottom: 10px;
+}
+
+.separator {
+  margin: 50px 50px;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: #d9d9d9;
+  padding: 50px 40px;
+}
+.footer__list {
+  display: flex;
+  list-style: none;
+}
+.footer__list a {
+  text-decoration: none;
+}
+.footer__text {
+  color: gray;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form__input {
+  background-color: #d9d9d9;
+  color: gray;
+  border: none;
+  padding: 10px;
+}
+.form__textarea {
+  background-color: #d9d9d9;
+  color: gray;
+  border: none;
+  padding: 3px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.contact__form__input {
+  margin: 10px;
+}
+.contact__form__textarea {
+  margin: 10px;
+}
+.contact__form__btn {
+  margin-right: 160px;
 }
 
 /*# sourceMappingURL=style.css.map */

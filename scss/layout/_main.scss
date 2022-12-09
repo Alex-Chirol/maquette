@@ -1,0 +1,33 @@
+// First section
+
+.section__article {
+    padding: 0 20%;
+}
+
+.article {
+    padding-top: 50px;
+    text-align: center;
+
+    &__img {
+        height: 50px;
+        margin-bottom: 10px;
+
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+}
+
+.separator {
+    margin: 50px 50px;
+}
+
+// Seconde section
+
+.contact__title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+// Form in forms.scss
