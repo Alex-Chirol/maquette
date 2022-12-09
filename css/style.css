@@ -72,17 +72,20 @@ body {
 
 .footer {
   background-color: #d9d9d9;
-  padding: 50px 40px;
+  padding: 50px 30px;
 }
 .footer__list {
   display: flex;
+  gap: 5px;
   list-style: none;
 }
 .footer__list a {
   text-decoration: none;
+  font-size: 0.8em;
 }
 .footer__text {
   color: gray;
+  font-size: 0.8em;
 }
 
 .btn {

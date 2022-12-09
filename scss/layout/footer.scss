@@ -1,14 +1,17 @@
 .footer {
     background-color: #d9d9d9;
-    padding: 50px 40px;
+    padding: 50px 30px;
     &__list {
         display: flex; 
+        gap: 5px;
         list-style: none;
     }
     &__list a {
         text-decoration: none;
+        font-size: 0.8em;
     }
     &__text {
         color: gray;
+        font-size: 0.8em;
     }
 }
