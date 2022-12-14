@@ -45,12 +45,33 @@ body {
 }
 
 .section__article {
-  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 481px) {
+  .section__article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .section__article {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }
 
 .article {
   padding-top: 50px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .article__img {
   height: 50px;
@@ -58,6 +79,9 @@ body {
 }
 .article__title {
   margin-bottom: 10px;
+}
+.article__text {
+  width: 60%;
 }
 
 .separator {

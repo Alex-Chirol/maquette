@@ -1,12 +1,30 @@
 // First section
 
 .section__article {
-    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 481px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    @media screen and (min-width: 769px) {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
 }
 
 .article {
     padding-top: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     &__img {
         height: 50px;
@@ -15,6 +33,9 @@
     }
     &__title {
         margin-bottom: 10px;
+    }
+    &__text {
+        width: 60%;
     }
 }
 
