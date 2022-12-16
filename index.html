@@ -12,13 +12,13 @@
 <body>
     <nav class="nav">
         <a class="nav__logo" href="#">Logo Placeholder</a>
-        <a class="nav__link btn" href="#">Sign up</a>
+        <a class="nav__link" href="#">Sign up</a>
     </nav>
     <header class="header">
         <h1 class="header__title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
         <form class="form" action="#">
             <input class="form__input" type="email" placeholder="Email adress">
-            <button class="form__btn btn" type="submit">Submit</button>
+            <button class="form__btn" type="submit">Submit</button>
         </form>
     </header>
     <main>
@@ -57,14 +57,18 @@
         <hr class="separator">
         <section class="section__contact">
             <h2 class="contact__title">Contact Us</h2>
-            <form class="form contact__form" action="#">
-                <input class="form__input contact__form__input" type="text" placeholder="Firstname">
-                <input class="form__input contact__form__input" type="text" placeholder="Lastname">
-                <input class="form__input contact__form__input" type="text" placeholder="Email address">
-                <input class="form__input contact__form__input" type="text" placeholder="Phone number">
-                <textarea class="form__textarea contact__form__textarea" name="comment" id="textarea" cols="30" rows="5"
+            <form class="contact__form" action="#">
+                <div class="form__name">
+                    <input class="form__firstname" type="text" placeholder="Firstname">
+                    <input class="form__name" type="text" placeholder="Lastname">
+                </div>
+                <div class="form__name">
+                    <input class="form__mail" type="text" placeholder="Email address">
+                    <input class="form__number" type="text" placeholder="Phone number">
+                </div>
+                <textarea class="form__textarea" name="comment" id="textarea" cols="30" rows="5"
                     placeholder="Type your message"></textarea>
-                <button class="form__btn btn contact__form__btn" type="submit">Submit</button>
+                <button class="form__btn" type="submit">Submit</button>
             </form>
         </section>
     </main>

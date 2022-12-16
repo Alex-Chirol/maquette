@@ -1,29 +1,47 @@
+input {
+    background-color: lightgray;
+    padding: 10px 0 10px 10px;
+    border: none;
+    width: 250px;
+}
+.form__textarea {
+    background-color: lightgray;
+    padding: 10px 0 10px 10px;
+    border: none;
+    width: 250px;
+    resize: none;
+}
 .form {
-    &__input {
-        background-color: #d9d9d9;
-        color: gray;
-        border: none;
-        padding: 10px;
-    }
-    &__textarea {
-        background-color: #d9d9d9;
-        color: gray;
-        border: none;
-        padding: 3px;
-    }
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 .contact__form {
+    margin: 20px auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    padding-bottom: 10px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-    &__input {
-        margin: 10px;
+    gap: 15px;
+    .form__name {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
-    &__textarea {
-        margin: 10px;
+    .form__btn {
+        margin-right: 200px;
     }
-    &__btn {
-        margin-right: 160px;
+}
+
+@media screen and (min-width: 481px) {
+    .form__name {
+        flex-direction: row !important;
     }
+    .form__textarea {
+        width: 515px;
+    }
+
 }

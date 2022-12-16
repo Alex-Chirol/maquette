@@ -11,15 +11,17 @@
     &__title {
         text-align: center;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-bottom: 10px;
     }
 }
 
-// Form in forms.scss
+@media screen and (min-width: 481px) {
+    .header {
+        height: 350px;
 
-.form {
-    &__btn {
-        border: none;
+        &__title {
+            font-size: 1.8em;
+        }
     }
 }

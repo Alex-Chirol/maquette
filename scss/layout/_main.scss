@@ -1,54 +1,55 @@
-// First section
-
 .section__article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 481px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-    @media screen and (min-width: 769px) {
-        flex-wrap: nowrap;
-        justify-content: space-around;
-
-    }
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .article {
-    padding-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 60%;
+    margin: 10px auto;
 
     &__img {
-        height: 50px;
-        margin-bottom: 10px;
+        width: 60px;
+    }
 
-    }
     &__title {
-        margin-bottom: 10px;
+        font-size: 1em;
+        margin: 10px 0;
     }
+
     &__text {
-        width: 60%;
+        font-size: 0.9em;
     }
 }
 
 .separator {
-    margin: 50px 50px;
+    margin: 20px 50px;
 }
 
-// Seconde section
-
-.contact__title {
+.section__contact {
     text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 50px;
+    .contact__title {
+        font-size: 1.5em;
+    }
 }
 
-// Form in forms.scss
+@media screen and (min-width: 481px) {
+    .section__article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    .article {
+        width: 40%;
+        &__img {
+            width: 80px;
+        }
+        &__title {
+            font-size: 1.1em;
+        }
+        &__text{
+            font-size: 1em;
+        }
+    }
+    }
+}
