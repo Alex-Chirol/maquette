@@ -29,6 +29,16 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 481px) {
+  .nav a {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav a {
+    font-size: 1.4em;
+  }
+}
 .header {
   background-image: url(../img/eau.jpg);
   background-size: cover;
@@ -51,7 +61,20 @@ body {
     height: 350px;
   }
   .header__title {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .header {
+    height: 450px;
+  }
+  .header__title {
     font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    height: 600px;
   }
 }
 .section__article {
@@ -91,6 +114,7 @@ body {
 @media screen and (min-width: 481px) {
   .section__article {
     flex-direction: row;
+    gap: 30px;
     flex-wrap: wrap;
   }
   .section__article .article {
@@ -111,7 +135,7 @@ body {
     flex-wrap: nowrap;
   }
   .section__article .article {
-    width: 25%;
+    width: 30%;
   }
   .section__article .article__img {
     width: 90px;
@@ -121,6 +145,11 @@ body {
   }
   .section__article .article__text {
     font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section__article .article {
+    width: 25%;
   }
 }
 .footer {
@@ -143,6 +172,16 @@ body {
   font-size: 0.8em;
 }
 
+@media screen and (min-width: 481px) {
+  .footer__list a, .footer__text {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__list a, .footer__text {
+    font-size: 1em;
+  }
+}
 .form__btn {
   background-color: blue;
   color: white;
@@ -176,7 +215,7 @@ input {
 .contact__form {
   margin: 20px auto;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-  width: 90%;
+  width: 350px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -189,15 +228,33 @@ input {
   gap: 15px;
 }
 .contact__form .form__btn {
-  margin-right: 200px;
+  margin-right: 190px;
 }
 
 @media screen and (min-width: 481px) {
-  .form__name {
-    flex-direction: row !important;
+  .contact__form {
+    width: 80%;
+  }
+  .contact__form .form__name {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact__form .form__btn {
+    margin-right: 350px;
   }
   .form__textarea {
-    width: 515px;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .contact__form {
+    width: 700px;
+  }
+  .contact__form .form__btn {
+    margin-right: 450px;
+  }
+  .form__textarea {
+    width: 515Px;
   }
 }
 

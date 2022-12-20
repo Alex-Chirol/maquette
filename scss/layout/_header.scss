@@ -16,12 +16,27 @@
     }
 }
 
-@media screen and (min-width: 481px) {
+@include breakpoint(tablet) {
     .header {
         height: 350px;
 
         &__title {
+            font-size: 1.5em;
+        }
+    }
+}
+
+@include breakpoint(laptop) {
+    .header {
+        height: 450px;
+        &__title {
             font-size: 1.8em;
         }
+    }       
+}
+
+@include breakpoint(dekstop) {
+    .header {
+        height: 600px;
     }
 }

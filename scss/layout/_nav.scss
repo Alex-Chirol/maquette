@@ -18,3 +18,18 @@
         border: none;
     }
 }
+@include breakpoint(tablet) {
+    .nav {
+        & a {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@include breakpoint(laptop) {
+    .nav {
+        & a {
+            font-size: 1.4em;
+        }
+    }
+}

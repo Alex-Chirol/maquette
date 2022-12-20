@@ -36,11 +36,11 @@
     }
 }
 
-@media screen and (min-width: 481px) {
+@include breakpoint(tablet) {
     .section__article {
         flex-direction: row;
+        gap: 30px;
         flex-wrap: wrap;
-
         .article {
             width: 40%;
 
@@ -59,12 +59,11 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@include breakpoint(laptop) {
     .section__article {
         flex-wrap: nowrap;
-
         .article {
-            width: 25%;
+            width: 30%;
 
             &__img {
                 width: 90px;
@@ -77,6 +76,14 @@
             &__text {
                 font-size: 1.1em;
             }
+        }
+    }
+}
+
+@include breakpoint(dekstop) {
+    .section__article {
+        .article {
+            width: 25%;
         }
     }
 }

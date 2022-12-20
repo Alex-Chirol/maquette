@@ -17,3 +17,18 @@
         font-size: 0.8em;
     }
 }
+
+@include breakpoint(tablet){
+    .footer {
+        &__list a , &__text {
+            font-size: 0.9em;
+        }
+    }
+}
+@include breakpoint(dekstop){
+    .footer {
+        &__list a , &__text {
+            font-size: 1em;
+        }
+    }
+}

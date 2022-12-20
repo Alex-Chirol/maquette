@@ -10,3 +10,15 @@ body {
 $blue : #0D6EFD;
 $gray : #D9D9D9;
 $lightgray : #F8F9FA;
+
+$breakpoints-up: (
+    'tablet' : 481px,
+    'laptop' : 769px,
+    'dekstop' : 1280px
+);
+
+@mixin breakpoint($size) {
+    @media screen and (min-width: map-get($breakpoints-up, $size)) {
+      @content; 
+    }
+};

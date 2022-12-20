@@ -20,7 +20,7 @@ input {
 .contact__form {
     margin: 20px auto;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-    width: 90%;
+    width: 350px;
     padding-bottom: 10px; 
     display: flex;
     flex-direction: column;
@@ -32,22 +32,39 @@ input {
         gap: 15px;
     }
     .form__btn {
-        margin-right: 200px;
+        margin-right: 190px;
     }
 }
 
-@media screen and (min-width: 481px) {
-    .form__name {
-        flex-direction: row !important;
+@include breakpoint(tablet) {
+
+    .contact__form {
+        width: 80%;
+        .form__name {
+            flex-direction: row;
+            justify-content: center;
+        }
+        .form__btn {
+            margin-right: 350px;
+        }
     }
     .form__textarea {
-        width: 515px;
+        width: 70%;
     }
 
 }
 
 @media screen and (min-width: 769px) {
 
+    .contact__form {
+        width: 700px;
+        .form__btn {
+            margin-right: 450px;
+        }
+    }
+    .form__textarea {
+        width: 515Px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
