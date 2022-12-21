@@ -194,7 +194,6 @@ input {
   background-color: lightgray;
   padding: 10px 0 10px 10px;
   border: none;
-  width: 250px;
 }
 
 .form__textarea {
@@ -227,6 +226,9 @@ input {
   flex-direction: column;
   gap: 15px;
 }
+.contact__form .form__name input {
+  width: 250px;
+}
 .contact__form .form__btn {
   margin-right: 190px;
 }
@@ -239,8 +241,11 @@ input {
     flex-direction: row;
     justify-content: center;
   }
+  .contact__form .form__name input {
+    width: 35%;
+  }
   .contact__form .form__btn {
-    margin-right: 350px;
+    margin-right: 55%;
   }
   .form__textarea {
     width: 70%;
@@ -252,6 +257,9 @@ input {
   }
   .contact__form .form__btn {
     margin-right: 450px;
+  }
+  .contact__form .form__name input {
+    width: 250px;
   }
   .form__textarea {
     width: 515Px;

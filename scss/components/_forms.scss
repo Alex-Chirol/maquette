@@ -2,7 +2,6 @@ input {
     background-color: lightgray;
     padding: 10px 0 10px 10px;
     border: none;
-    width: 250px;
 }
 .form__textarea {
     background-color: lightgray;
@@ -31,6 +30,9 @@ input {
         flex-direction: column;
         gap: 15px;
     }
+    .form__name input {
+        width: 250px;
+    }
     .form__btn {
         margin-right: 190px;
     }
@@ -44,8 +46,11 @@ input {
             flex-direction: row;
             justify-content: center;
         }
+        .form__name input {
+            width: 35%;
+        }
         .form__btn {
-            margin-right: 350px;
+            margin-right: 55%;
         }
     }
     .form__textarea {
@@ -54,19 +59,18 @@ input {
 
 }
 
-@media screen and (min-width: 769px) {
+@include breakpoint(laptop) {
 
     .contact__form {
         width: 700px;
         .form__btn {
             margin-right: 450px;
         }
+        .form__name input {
+            width: 250px;
+        }
     }
     .form__textarea {
         width: 515Px;
     }
-}
-
-@media screen and (min-width: 1280px) {
-    
 }
