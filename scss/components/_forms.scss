@@ -41,7 +41,7 @@ input {
 @include breakpoint(tablet) {
 
     .contact__form {
-        width: 80%;
+        width: 500px;
         .form__name {
             flex-direction: row;
             justify-content: center;
@@ -54,7 +54,7 @@ input {
         }
     }
     .form__textarea {
-        width: 70%;
+        width: 325px;
     }
 
 }

@@ -235,7 +235,7 @@ input {
 
 @media screen and (min-width: 481px) {
   .contact__form {
-    width: 80%;
+    width: 500px;
   }
   .contact__form .form__name {
     flex-direction: row;
@@ -248,7 +248,7 @@ input {
     margin-right: 55%;
   }
   .form__textarea {
-    width: 70%;
+    width: 325px;
   }
 }
 @media screen and (min-width: 769px) {
