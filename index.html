@@ -57,17 +57,33 @@
         <hr class="separator">
         <section class="section__contact">
             <h2 class="contact__title">Contact Us</h2>
-            <form class="contact__form" action="#">
+            <form class="contact__form" action="#" id="contactForm">
                 <div class="form__name">
-                    <input class="form__firstname" type="text" placeholder="Firstname">
-                    <input class="form__name" type="text" placeholder="Lastname">
+                    <div class="form--label">
+                        <input class="form__firstname" type="text" name="firstName" placeholder="Firstname"
+                            id="firstName">
+                        <label for="firstName" class="label-error" id="firstNameError">Veuillez remplir ce champ</label>
+                    </div>
+                    <div class="form--label">
+                        <input class="form__name" type="text" placeholder="Lastname" name="lastName" id="lastName">
+                        <label for="lastName" class="label-error" id="lastNameError">Veuillez remplir ce champ</label>
+                    </div>
                 </div>
                 <div class="form__name">
-                    <input class="form__mail" type="text" placeholder="Email address">
-                    <input class="form__number" type="text" placeholder="Phone number">
+                    <div class="form--label">
+                        <input class="form__mail" type="text" placeholder="Email address" name="email" id="email">
+                        <label for="email" class="label-error" id="emailError">Email non valide</label>
+                    </div>
+                    <div class="form--label">
+                        <input class="form__number" type="text" placeholder="Phone number" name="phone" id="phone">
+                        <label for="phone" class="label-error" id="phoneError">Numéro non valide</label>
+                    </div>
                 </div>
-                <textarea class="form__textarea" name="comment" id="textarea" cols="30" rows="5"
-                    placeholder="Type your message"></textarea>
+                <div class="form--label">
+                    <textarea class="form__textarea" name="message" id="textarea"
+                        placeholder="Type your message"></textarea>
+                    <label for="textarea" class="label-error" id="textareaError">Veuillez remplir ce champ</label>
+                </div>
                 <button class="form__btn" type="submit">Submit</button>
             </form>
         </section>
@@ -81,6 +97,8 @@
         </ul>
         <p class="footer__text">My website 2022 - All right reserved</p>
     </footer>
+    <script src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,8 @@ input {
     padding: 10px 0 10px 10px;
     border: none;
     width: 250px;
-    resize: none;
+    resize: vertical;
+
 }
 .form {
     display: flex;
@@ -38,16 +39,21 @@ input {
     }
 }
 
+.label-error {
+    color: red;
+    font-size: 0.8em;
+    opacity: 0;
+}
 @include breakpoint(tablet) {
 
     .contact__form {
         width: 500px;
-        .form__name {
+        .form__name{
             flex-direction: row;
             justify-content: center;
         }
         .form__name input {
-            width: 35%;
+            width: 155px;
         }
         .form__btn {
             margin-right: 55%;
@@ -57,6 +63,11 @@ input {
         width: 325px;
     }
 
+}
+.label-error {
+    color: red;
+    display: flex;
+    flex-direction: column;
 }
 
 @include breakpoint(laptop) {

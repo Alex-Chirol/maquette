@@ -201,7 +201,7 @@ input {
   padding: 10px 0 10px 10px;
   border: none;
   width: 250px;
-  resize: none;
+  resize: vertical;
 }
 
 .form {
@@ -233,6 +233,12 @@ input {
   margin-right: 190px;
 }
 
+.label-error {
+  color: red;
+  font-size: 0.8em;
+  opacity: 0;
+}
+
 @media screen and (min-width: 481px) {
   .contact__form {
     width: 500px;
@@ -242,7 +248,7 @@ input {
     justify-content: center;
   }
   .contact__form .form__name input {
-    width: 35%;
+    width: 155px;
   }
   .contact__form .form__btn {
     margin-right: 55%;
@@ -251,6 +257,12 @@ input {
     width: 325px;
   }
 }
+.label-error {
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 769px) {
   .contact__form {
     width: 700px;
