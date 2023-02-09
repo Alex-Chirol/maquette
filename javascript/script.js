@@ -59,23 +59,31 @@ contactForm.addEventListener('submit', async (event) => {
         textareaError.style.opacity = '1';
     }
 
+    const modal = document.getElementById('modal');
+
+    modal.style.display = 'none';
+
     if (!Object.values(errors).includes(true)) {
         console.log(formData)
+
         axios.post('http://212.83.176.255:3030/contact', 
         formData)
-          .then(function (response) {
+        .then(function (response) {
             console.log(response.data);
-          })
-          .catch(function (error) {
+        })
+        .catch(function (error) {
             console.log(error);
-          });
-
+        });
+        
+        modal.style.display = 'flex';
+        contactForm.reset();
     }
 
-    contactForm.reset();
+
 })
 
+const modalBtn = document.getElementById("modalBtn");
 
-
-
-
+modalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+})

@@ -240,6 +240,32 @@ input {
   opacity: 0;
 }
 
+.modal__container {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.349);
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 20px 20px;
+  background-color: rgb(65, 59, 59);
+  color: white;
+  border-radius: 20px;
+}
+.modal__btn {
+  margin-top: 20px;
+  border: none;
+  background-color: #0D6EFD;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 481px) {
   .contact__form {
     width: 500px;
